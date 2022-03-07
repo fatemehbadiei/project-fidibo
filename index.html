@@ -1,0 +1,1331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/fontiran.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!--    <link rel="stylesheet" href="css/owl.theme.default.min.css">-->
+    <!-- Main css -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9  d-flex align-items-center">
+                    <nav class="navbar navbar-light">
+                        <a class="navbar-brand mr-0">
+                            <img src="img/nd-header-logo.svg" alt="">
+                        </a>
+                    </nav>
+                    <form action="#" class="position-relative form-search">
+                        <div class="form-group mb-0 d-flex align-items-center div-search" id="input-form">
+                            <input type="search" class="input-group form-control mr-3 search-input"
+                                   placeholder="جستجو کتاب الکترونیکی و صوتی، پادکست، نویسنده …">
+                            <button type="submit" class="d-flex"><i class="ti-search ml-3"></i></button>
+                        </div>
+                        <div class="input-bottom d-none" id="input-bottom">
+                            <p>برای آغاز جستجو حداقل دو حرف تایپ کنید (:</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center pt-2 pb-2">
+                    <nav class="navbar p-0">
+                        <div class="collapse navbar-collapse d-block" id="navbarNav">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="ti-gift"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="ti-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="ti-user"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link login">ورود و ثبت نام</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-book">
+                    <div class="collapse navbar-collapse justify-content-between  nav-bottom"
+                         id="navbarSupportedContent">
+                        <ul class="navbar-nav p-0">
+                            <li class="nav-item" id="home">
+                                <i class="ti-home"></i>
+                                <a class="nav-link" href="#">خانه</a>
+                            </li>
+                            <li class="nav-item" id="audio-book">
+                                <i class="ti-book"></i>
+                                <a class="nav-link" href="#">کتاب الکترونیکی و صوتی</a>
+                                <div class="container div-menu-audio d-none" id="menu-audio-book">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul class="menu-audiobook">
+                                                <li>
+                                                    <a href="#">داستان و رمان</a>
+                                                    <ul>
+                                                        <li><a href="#">داستان کوتاه</a></li>
+                                                        <li><a href="#">داستان و رمان ایرانی</a></li>
+                                                        <li><a href="#">داستان و رمان پلیسی</a></li>
+                                                        <li><a href="#">داستان و رمان خارجی</a></li>
+                                                        <li><a href="#">داستان و رمان طنز</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">سبک زندگی</a>
+                                                    <ul>
+                                                        <li><a href="#">آشپزی</a></li>
+                                                        <li><a href="#">ایران‌شناسی</a></li>
+                                                        <li><a href="#">خانواده</a></li>
+                                                        <li><a href="#">سرگرمی</a></li>
+                                                        <li><a href="#">سلامت و رژیم درمانی</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">روانشناسی</a>
+                                                    <ul>
+                                                        <li><a href="#">انگیزشی و موفقیت</a></li>
+                                                        <li><a href="#">خودشناسی و خودسازی</a></li>
+                                                        <li><a href="#">روابط اجتماعی</a></li>
+                                                        <li><a href="#">روابط خانوادگی</a></li>
+                                                        <li><a href="#">روانشناسی کودکان</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">هنر</a>
+                                                    <ul>
+                                                        <li><a href="#">تاریخ هنر</a></li>
+                                                        <li><a href="#">سینما و تئاتر</a></li>
+                                                        <li><a href="#">معماری</a></li>
+                                                        <li><a href="#">موسیقی</a></li>
+                                                        <li><a href="#">نقاشی</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">مدیریت، بازاریابی و فروش</a>
+                                                    <ul>
+                                                        <li><a href="#">تبلیغات و بازاریابی</a></li>
+                                                        <li><a href="#">رهبری</a></li>
+                                                        <li><a href="#">کارآفرینی و کسب و کار</a></li>
+                                                        <li><a href="#">مالی و سرمایه گذاری</a></li>
+                                                        <li><a href="#">مدیریت استراتژیک</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">تاریخ</a>
+                                                    <ul>
+                                                        <li><a href="#"> تاریخ جهان</a></li>
+                                                        <li><a href="#">تاریخ کهن</a></li>
+                                                        <li><a href="#">تاریخ معاصر</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">علمی</a>
+                                                    <ul>
+                                                        <li><a href="#">تکنولوژی</a></li>
+                                                        <li><a href="#">دانش</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">علوم اجتماعی</a>
+                                                    <ul>
+                                                        <li><a href="#">ارتباطات و رسانه</a></li>
+                                                        <li><a href="#">علوم سیاسی</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">شعر</a>
+                                                    <ul>
+                                                        <li><a href="#">شعر ایران</a></li>
+                                                        <li><a href="#">شعر جهان</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">کتاب‌های رایگان</a>
+                                                    <ul>
+                                                        <li><a href="#">اینفوگرافیک</a></li>
+                                                        <li><a href="#">دیجی‌کالا مگ</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">آموزش</a>
+                                                    <ul>
+                                                        <li><a href="#">زبان آموزی</a></li>
+                                                        <li><a href="#">علوم کامپیوتر</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">دین و عرفان</a>
+                                                    <ul>
+                                                        <li><a href="#">عرفان</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">فلسفه</a>
+                                                    <ul>
+                                                        <li><a href="#">دانشنامه فلسفه استنفورد</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">کودک</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">نوجوان</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">اقتصاد</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">زنان و فمینیسم</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">English Books</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">حقوق</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">کمیک‌های رایگان</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item" id="paadcast">
+                                <i class="ti-microphone"></i>
+                                <a class="nav-link" href="#">پادکست</a>
+                                <div class="container div-menu-audio d-none" id="menu-paadcast">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul class="menu-audiobook">
+                                                <li>
+                                                    <a href="#">پادکست‌های محبوب</a>
+                                                    <ul>
+                                                        <li><a href="#">چنل بی</a></li>
+                                                        <li><a href="#">استرینگ کست</a></li>
+                                                        <li><a href="#">آلبوم</a></li>
+                                                        <li><a href="#">رادیو دیو</a></li>
+                                                        <li><a href="#">ناوکست</a></li>
+                                                        <li><a href="#">بی پلاس</a></li>
+                                                        <li><a href="#">فردوسی خوانی</a></li>
+                                                        <li><a href="#">هلو تاک</a></li>
+                                                        <li><a href="#">رادیو جولون</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های روایی</a>
+                                                    <ul>
+                                                        <li><a href="#">احسان عبدی‌پور</a></li>
+                                                        <li><a href="#">ساگا</a></li>
+                                                        <li><a href="#">رادیو مرز</a></li>
+                                                        <li><a href="#">راوکست</a></li>
+                                                        <li><a href="#">صداهای همراه</a></li>
+                                                        <li><a href="#">ژرفا</a></li>
+                                                        <li><a href="#">آن</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های روانشناسی و توسعه فردی</a>
+                                                    <ul>
+                                                        <li><a href="#">منیاز</a></li>
+                                                        <li><a href="#">دارما</a></li>
+                                                        <li><a href="#">زندگی نارنجی</a></li>
+                                                        <li><a href="#">هم آوا</a></li>
+                                                        <li><a href="#">رو به اوج</a></li>
+                                                        <li><a href="#">هلوتاک</a></li>
+                                                        <li><a href="#">ناجی</a></li>
+                                                        <li><a href="#">رواق</a></li>
+                                                        <li><a href="#">یونگ نگار</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">علم و تکنولوژی</a>
+                                                    <ul>
+                                                        <li><a href="#">ژرفا</a></li>
+                                                        <li><a href="#">فلسفه علم</a></li>
+                                                        <li><a href="#">دایجست</a></li>
+                                                        <li><a href="#">بلاک چین</a></li>
+                                                        <li><a href="#">استرینگ کست</a></li>
+                                                        <li><a href="#">تک چی</a></li>
+                                                        <li><a href="#">رادیو بادیو</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های مدیریت و کسب‌وکار</a>
+                                                    <ul>
+                                                        <li><a href="#">ده صبح</a></li>
+                                                        <li><a href="#">مسیر آفرین</a></li>
+                                                        <li><a href="#">دیجیتال مارکتینگ</a></li>
+                                                        <li><a href="#">رادیو ویدار</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های سینمایی</a>
+                                                    <ul>
+                                                        <li><a href="#">ابدیت و یک روز</a></li>
+                                                        <li><a href="#">پادکست پاپریکا</a></li>
+                                                        <li><a href="#">پادکست سینما گپ</a></li>
+                                                        <li><a href="#">نیمه شب</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های موسیقی</a>
+                                                    <ul>
+                                                        <li><a href="#">پادکست آلبوم</a></li>
+                                                        <li><a href="#">پادکست کُرُن</a></li>
+                                                        <li><a href="#">پادکست آمپاژ</a></li>
+                                                        <li><a href="#">آهنگساز</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های شعر و داستان</a>
+                                                    <ul>
+                                                        <li><a href="#">فردوسی خوانی</a></li>
+                                                        <li><a href="#">انسانک</a></li>
+                                                        <li><a href="#">تراولکست</a></li>
+                                                        <li><a href="#">رادیو صدای زمین</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های تاریخی</a>
+                                                    <ul>
+                                                        <li><a href="#">پاراگراف</a></li>
+                                                        <li><a href="#">رادیو ته ‌دیگ</a></li>
+                                                        <li><a href="#">پادکست شیر کاکائو</a></li>
+                                                        <li><a href="#">رادیو دست‌‌نوشته‌ها</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item" id="magazine">
+                                <i class="ti-receipt"></i>
+                                <a class="nav-link" href="#">مجله</a>
+                                <div class="container div-menu-audio d-none" id="menu-magazine">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul class="menu-audiobook">
+                                                <li>
+                                                    <a href="#">سبک زندگی</a>
+                                                    <ul>
+                                                        <li><a href="#">دانستنیها</a></li>
+                                                        <li><a href="#">موسسه فرهنگی هنری سانازسانيا</a></li>
+                                                        <li><a href="#">دانش یوگا</a></li>
+                                                        <li><a href="#">نجوم</a></li>
+                                                        <li><a href="#">آشپزی مثبت</a></li>
+                                                        <li><a href="#">نشریه بازی‌نما</a></li>
+                                                        <li><a href="#">نشریه موفقیت</a></li>
+                                                        <li><a href="#">پنجره خلاقیت</a></li>
+                                                        <li><a href="#">نشریه جنگ‌افزار</a></li>
+                                                        <li><a href="#">دانشمند</a></li>
+                                                        <li><a href="#">مجله راز</a></li>
+                                                        <li><a href="#">سرآشپز</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">فرهنگی هنری</a>
+                                                    <ul>
+                                                        <li><a href="#">آنگاه</a></li>
+                                                        <li><a href="#">سینما و ادبیات</a></li>
+                                                        <li><a href="#">نشریه مروارید</a></li>
+                                                        <li><a href="#">همشهری داستان</a></li>
+                                                        <li><a href="#">بخارا</a></li>
+                                                        <li><a href="#">سخن سیاووشان</a></li>
+                                                        <li><a href="#">ماهنامه وزن دنیا</a></li>
+                                                        <li><a href="#">هفته‌نامه کرگدن</a></li>
+                                                        <li><a href="#">ماهنامه حوالی</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">اجتماعی</a>
+                                                    <ul>
+                                                        <li><a href="#">ترجمان علوم انسانی</a></li>
+                                                        <li><a href="#">اندیشه پویا</a></li>
+                                                        <li><a href="#">عصر اندیشه</a></li>
+                                                        <li><a href="#">هفته‌نامه صدا</a></li>
+                                                        <li><a href="#">ماهنامه تجربه</a></li>
+                                                        <li><a href="#">چلچراغ</a></li>
+                                                        <li><a href="#">همشهری جوان</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">مدیریت و اقتصاد</a>
+                                                    <ul>
+                                                        <li><a href="#">فصلنامه بادکوبه</a></li>
+                                                        <li><a href="#">مجله کسب و کار هاروارد</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">سینمایی</a>
+                                                    <ul>
+                                                        <li><a href="#">ماهنامه فیلم‌کاو</a></li>
+                                                        <li><a href="#">فصلنامه سینما انیمیشن</a></li>
+                                                        <li><a href="#">همشهری سینما</a></li>
+                                                        <li><a href="#">ماهنامه برش‌های کوتاه</a></li>
+                                                        <li><a href="#">اطلاعات هفتگی</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <button class="btn" type="submit">دانلود اپلیکیشن</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="carouselExampleCaptions" class="carousel slide slider-top" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/nd-criminal.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/nd-self-study.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/nd-application.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/nd-fidiplus.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev icon-prev" type="button" data-target="#carouselExampleCaptions"
+                            data-slide="prev">
+                        <span class="father">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button class="carousel-control-next icon-next" type="button" data-target="#carouselExampleCaptions"
+                            data-slide="next">
+                        <span class="father">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section-sell">
+            <h3>پرفروش‌های هفته</h3>
+            <div class="owl-carousel owl-theme more-sell">
+                <div>
+                    <a href="#"><img src="img/82189_22986_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="کتاب اثر مرکب گام به گام موفقیت خود را ..."><p>کتاب اثر مرکب گام به گام موفقیت خود را
+                        ... </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">دارن هاردی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/121202_40048_normal.jpg" alt=""></a>
+                    <a href="#"><p>معجزه (جادو) شکرگزاری تنها کتاب مورد نیاز ... </p></a>
+                    <span>راندا برن</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110824_35887_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه مانند میلیونرها فکر کنیم؟ </p></a>
+                    <span>مارک آلن،مارک فیشر</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/109996_41325_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه هفت دروازه روحی خویش را ... </p></a>
+                    <span>HTeBooks</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/125747_30349_normal.webp" alt=""></a>
+                    <a href="#"><p>ایده‌های بزرگ برای بچه‌های کوچک آموزش ... </p></a>
+                    <span>تامس وارتنبرگ</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/102322_54422_normal.jpg" alt=""></a>
+                    <a href="#"><p>آخرین قهوه تلخ </p></a>
+                    <span>شادی باباخانی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/82189_22986_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب اثر مرکب گام به گام موفقیت خود را ... </p></a>
+                    <span>دارن هاردی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/121202_40048_normal.jpg" alt=""></a>
+                    <a href="#"><p>معجزه (جادو) شکرگزاری تنها کتاب مورد نیاز ... </p></a>
+                    <span>راندا برن</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110824_35887_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه مانند میلیونرها فکر کنیم؟ </p></a>
+                    <span>مارک آلن،مارک فیشر</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/109996_41325_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه هفت دروازه روحی خویش را ... </p></a>
+                    <span>HTeBooks</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/125747_30349_normal.webp" alt=""></a>
+                    <a href="#"><p>ایده‌های بزرگ برای بچه‌های کوچک آموزش ... </p></a>
+                    <span>تامس وارتنبرگ</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/102322_54422_normal.jpg" alt=""></a>
+                    <a href="#"><p>آخرین قهوه تلخ </p></a>
+                    <span>شادی باباخانی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/82189_22986_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب اثر مرکب گام به گام موفقیت خود را ... </p></a>
+                    <span>دارن هاردی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/121202_40048_normal.jpg" alt=""></a>
+                    <a href="#"><p>معجزه (جادو) شکرگزاری تنها کتاب مورد نیاز ... </p></a>
+                    <span>راندا برن</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110824_35887_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه مانند میلیونرها فکر کنیم؟ </p></a>
+                    <span>مارک آلن،مارک فیشر</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/109996_41325_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه هفت دروازه روحی خویش را ... </p></a>
+                    <span>HTeBooks</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/125747_30349_normal.webp" alt=""></a>
+                    <a href="#"><p>ایده‌های بزرگ برای بچه‌های کوچک آموزش ... </p></a>
+                    <span>تامس وارتنبرگ</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/102322_54422_normal.jpg" alt=""></a>
+                    <a href="#"><p>آخرین قهوه تلخ </p></a>
+                    <span>شادی باباخانی</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="#" class="banner-image">
+            <img src="img/14001169.webp" alt="" class="w-100 mt-4">
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="section-sell">
+            <div class="american-book d-flex justify-content-between">
+                <a href="#"><p>ادبیات آمریکای جنوبی</p></a>
+                <a href="#"><span>بیشتر</span></a>
+            </div>
+            <div class="owl-carousel owl-theme more-sell">
+                <div>
+                    <a href="#"><img src="img/68502_16997_normal.webp" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="کتاب صوتی کیمیاگر |صدای محسن نامجو | ترجمه ... "><p>کتاب صوتی کیمیاگر |صدای محسن نامجو |
+                        ترجمه ... </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">پائولو کوئیلو</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/95065_74934_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی صد سال تنهایی </p></a>
+                    <span> گابریل گارسیا مارکز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/5287_73360_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب کیمیاگر </p></a>
+                    <span>پائولو کوئیلو</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/81989_56738_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی صد سال تنهایی </p></a>
+                    <span> گابریل گارسیا مارکز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/1971_78438_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب کوری </p></a>
+                    <span>ژوزه ساراماگو</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/82084_68107_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی کیمیاگر </p></a>
+                    <span>پائولو کوئیلو</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/68502_16997_normal.webp" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="کتاب صوتی کیمیاگر |صدای محسن نامجو | ترجمه ... "><p>کتاب صوتی کیمیاگر |صدای محسن نامجو |
+                        ترجمه ... </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">پائولو کوئیلو</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/95065_74934_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی صد سال تنهایی </p></a>
+                    <span> گابریل گارسیا مارکز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/5287_73360_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب کیمیاگر </p></a>
+                    <span>پائولو کوئیلو</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/81989_56738_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی صد سال تنهایی </p></a>
+                    <span> گابریل گارسیا مارکز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/1971_78438_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب کوری </p></a>
+                    <span>ژوزه ساراماگو</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/82084_68107_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی کیمیاگر </p></a>
+                    <span>پائولو کوئیلو</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-sell mt-2">
+            <div class="american-book d-flex justify-content-between">
+                <a href="#"><p>قصه‌های رایگان گرامافون</p></a>
+                <a href="#"><span>بیشتر</span></a>
+            </div>
+            <div class="owl-carousel owl-theme more-sell">
+                <div>
+                    <a href="#"><img src="img/124629_35250_normal.webp" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="کتاب صوتی گرامافون (قسمت پایانی) مَم و زین "><p>کتاب صوتی گرامافون (قسمت پایانی) مَم و
+                        زین </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/121545_15149_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون قصه‌ی مینا و پلنگ </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/124385_51807_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون رعنا </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/122750_69781_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون افسانه‌ی شاماران </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/121662_19177_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون پری‌جان </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/121977_29546_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون سیب میخک‌کوب </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/124629_35250_normal.webp" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="کتاب صوتی گرامافون (قسمت پایانی) مَم و زین "><p>کتاب صوتی گرامافون (قسمت پایانی) مَم و
+                        زین </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/121545_15149_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون قصه‌ی مینا و پلنگ </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/124385_51807_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون رعنا </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/122750_69781_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون افسانه‌ی شاماران </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/121662_19177_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون پری‌جان </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/121977_29546_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی گرامافون سیب میخک‌کوب </p></a>
+                    <span>شرمین نادری</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="#" class="banner-image">
+            <img src="img/14001172.webp" alt="" class="w-100 mt-4">
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="section-sell">
+            <div class="american-book d-flex justify-content-between">
+                <a href="#"><p>پرفروش‌های صوتی</p></a>
+                <a href="#"><span>بیشتر</span></a>
+            </div>
+            <div class="owl-carousel owl-theme more-sell">
+                <div>
+                    <a href="#"><img src="img/92139_41399_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right" title="کتاب صوتی مغازه خودکشی "><p>کتاب
+                        صوتی مغازه خودکشی </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">ژان تولی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110470_85428_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی قصه‌های هزار و یک شب - جلد اول (شب ... </p></a>
+                    <span>عبداللطیف طسوجی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/97458_74913_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی باشگاه ۵ صبحی‌ها صبح شما، تمام ... </p></a>
+                    <span>رابین شارما</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/96894_21048_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی اثر مرکب </p></a>
+                    <span>دارن هاردی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/86020_89722_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی ملت عشق اجرای جدید </p></a>
+                    <span>الیف شافاک</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110824_35887_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه مانند میلیونرها فکر کنیم؟ </p></a>
+                    <span>مارک آلن،مارک فیشر</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/92139_41399_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right" title="کتاب صوتی مغازه خودکشی "><p>کتاب
+                        صوتی مغازه خودکشی </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">ژان تولی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110470_85428_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی قصه‌های هزار و یک شب - جلد اول (شب ... </p></a>
+                    <span>عبداللطیف طسوجی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/97458_74913_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی باشگاه ۵ صبحی‌ها صبح شما، تمام ... </p></a>
+                    <span>رابین شارما</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/96894_21048_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی اثر مرکب </p></a>
+                    <span>دارن هاردی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/86020_89722_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی ملت عشق اجرای جدید </p></a>
+                    <span>الیف شافاک</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110824_35887_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه مانند میلیونرها فکر کنیم؟ </p></a>
+                    <span>مارک آلن،مارک فیشر</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-sell">
+            <div class="american-book d-flex justify-content-between">
+                <a href="#"><p>کتاب‌های تاریخ</p></a>
+                <a href="#"><span>بیشتر</span></a>
+            </div>
+            <div class="owl-carousel owl-theme more-sell">
+                <div>
+                    <a href="#"><img src="img/1009_46956_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right" title="کتاب نبرد من "><p>کتاب نبرد من </p>
+                    </a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">آدولف هيتلر</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/84633_66310_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی حرمسرای قذافی </p></a>
+                    <span>آنیک کوژان</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/66642_10116_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب ایران بین دو انقلاب </p></a>
+                    <span>یرواند آبراهامیان</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/96873_73387_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی دو قرن سکوت </p></a>
+                    <span>عبدالحسین زرین‌کوب</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/64149_67874_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب فرار از اردوگاه ۱۴ داستان واقعی فرار ... </p></a>
+                    <span>بلین هاردن</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/67531_94799_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب تاریخ ایران مدرن </p></a>
+                    <span>یرواند آبراهامیان</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/1009_46956_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right" title="کتاب نبرد من "><p>کتاب نبرد من </p>
+                    </a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">آدولف هيتلر</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/84633_66310_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی حرمسرای قذافی </p></a>
+                    <span>آنیک کوژان</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/66642_10116_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب ایران بین دو انقلاب </p></a>
+                    <span>یرواند آبراهامیان</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/96873_73387_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی دو قرن سکوت </p></a>
+                    <span>عبدالحسین زرین‌کوب</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/64149_67874_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب فرار از اردوگاه ۱۴ داستان واقعی فرار ... </p></a>
+                    <span>بلین هاردن</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/67531_94799_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب تاریخ ایران مدرن </p></a>
+                    <span>یرواند آبراهامیان</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="#" class="banner-image">
+            <img src="img/14001170.webp" alt="" class="w-100 mt-4">
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="section-sell">
+            <div class="american-book d-flex justify-content-between">
+                <a href="#"><p>زنان و فمینیسم</p></a>
+                <a href="#"><span>بیشتر</span></a>
+            </div>
+            <div class="owl-carousel owl-theme more-sell">
+                <div>
+                    <a href="#"><img src="img/68003_40379_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="کتاب راز دختران موفق  رمزگشایی از ... "><p>کتاب راز دختران موفق رمزگشایی از ... </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">کاراالویل لیبا</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/81912_21189_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب جنس ضعیف گزارشی از وضعيت زنان جهان </p></a>
+                    <span>اوریانا فالاچی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/3796_90342_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب عقده سیندرلا </p></a>
+                    <span>کولت داولینگ</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/64968_65054_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب بانوی قدرتمند </p></a>
+                    <span>لوییز ال.هی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/66696_55790_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب من نجود هستم ده ساله، مطلقه </p></a>
+                    <span>دلفين مانوئی،نجود علی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/4473_81794_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب حقایقی درباره تجاوز جنسی </p></a>
+                    <span>مارک جی .کیتلسون</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/68003_40379_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="کتاب راز دختران موفق  رمزگشایی از ... "><p>کتاب راز دختران موفق رمزگشایی از ... </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">کاراالویل لیبا</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/81912_21189_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب جنس ضعیف گزارشی از وضعيت زنان جهان </p></a>
+                    <span>اوریانا فالاچی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/3796_90342_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب عقده سیندرلا </p></a>
+                    <span>کولت داولینگ</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/64968_65054_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب بانوی قدرتمند </p></a>
+                    <span>لوییز ال.هی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/66696_55790_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب من نجود هستم ده ساله، مطلقه </p></a>
+                    <span>دلفين مانوئی،نجود علی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/4473_81794_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب حقایقی درباره تجاوز جنسی </p></a>
+                    <span>مارک جی .کیتلسون</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-sell">
+            <div class="american-book d-flex justify-content-between">
+                <a href="#"><p>کتاب‌های نوجوان</p></a>
+                <a href="#"><span>بیشتر</span></a>
+            </div>
+            <div class="owl-carousel owl-theme more-sell">
+                <div>
+                    <a href="#"><img src="img/110275_79641_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="کتاب صوتی بهترین فکر دنیا مجموعه مدرسه ... "><p>کتاب صوتی بهترین فکر دنیا مجموعه مدرسه
+                        ... </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">دن گاتمن</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/93787_45798_normal.webp" alt=""></a>
+                    <a href="#"><p>کتاب صوتی مثل ها و قصه هایشان با صدای بهرام ... </p></a>
+                    <span>مصطفی رحماندوست</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/80134_43146_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی مسافر کوچولو </p></a>
+                    <span>آنتوان دوسنت اگزوپری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/113915_62998_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی معلم تازه کار مجموعه مدرسه پرماجرا ... </p></a>
+                    <span>دن گاتمن</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/1923_61017_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب ماهی سیاه کوچولو، اثر صمد بهرنگی </p></a>
+                    <span> صمد بهرنگی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/7345_72625_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب هری پاتر و فرزند نفرین شده </p></a>
+                    <span>جی.کی رولینگ</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110275_79641_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="کتاب صوتی بهترین فکر دنیا مجموعه مدرسه ... "><p>کتاب صوتی بهترین فکر دنیا مجموعه مدرسه
+                        ... </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">دن گاتمن</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/93787_45798_normal.webp" alt=""></a>
+                    <a href="#"><p>کتاب صوتی مثل ها و قصه هایشان با صدای بهرام ... </p></a>
+                    <span>مصطفی رحماندوست</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/80134_43146_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی مسافر کوچولو </p></a>
+                    <span>آنتوان دوسنت اگزوپری</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/113915_62998_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی معلم تازه کار مجموعه مدرسه پرماجرا ... </p></a>
+                    <span>دن گاتمن</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/1923_61017_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب ماهی سیاه کوچولو، اثر صمد بهرنگی </p></a>
+                    <span> صمد بهرنگی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/7345_72625_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب هری پاتر و فرزند نفرین شده </p></a>
+                    <span>جی.کی رولینگ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <a href="#" class="banner-image">
+            <img src="img/jebeli.webp" alt="" class="w-100 mt-4">
+        </a>
+    </div>
+
+    <div class="container">
+        <div class="section-sell">
+            <div class="american-book d-flex justify-content-between">
+                <a href="#"><p>محبوب‌ترین داستان‌ها و رمان‌ها</p></a>
+                <a href="#"><span>بیشتر</span></a>
+            </div>
+            <div class="owl-carousel owl-theme more-sell">
+                <div>
+                    <a href="#"><img src="img/92139_41399_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right" title="کتاب صوتی مغازه خودکشی "><p>کتاب
+                        صوتی مغازه خودکشی </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">ژان تولی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110470_85428_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی قصه‌های هزار و یک شب - جلد اول (شب ... </p></a>
+                    <span>عبداللطیف طسوجی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/62882_79534_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب وقتی نیچه گریست </p></a>
+                    <span>اروین یالوم</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/96894_21048_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی اثر مرکب </p></a>
+                    <span>دارن هاردی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/86020_89722_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی ملت عشق اجرای جدید </p></a>
+                    <span>الیف شافاک</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110824_35887_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه مانند میلیونرها فکر کنیم؟ </p></a>
+                    <span>مارک آلن،مارک فیشر</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/92139_41399_normal.jpg" alt="" data-toggle="tooltip"
+                                     data-placement="bottom" title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right" title="کتاب صوتی مغازه خودکشی "><p>کتاب
+                        صوتی مغازه خودکشی </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">ژان تولی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110470_85428_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی قصه‌های هزار و یک شب - جلد اول (شب ... </p></a>
+                    <span>عبداللطیف طسوجی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/97458_74913_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی باشگاه ۵ صبحی‌ها صبح شما، تمام ... </p></a>
+                    <span>رابین شارما</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/96894_21048_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی اثر مرکب </p></a>
+                    <span>دارن هاردی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/86020_89722_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی ملت عشق اجرای جدید </p></a>
+                    <span>الیف شافاک</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/110824_35887_normal.jpg" alt=""></a>
+                    <a href="#"><p>کتاب صوتی چگونه مانند میلیونرها فکر کنیم؟ </p></a>
+                    <span>مارک آلن،مارک فیشر</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section-sell">
+            <div class="american-book d-flex justify-content-between">
+                <a href="#"><p>تازه‌های پادکست</p></a>
+                <a href="#"><span>بیشتر</span></a>
+            </div>
+            <div class="owl-carousel owl-theme more-sell">
+                <div>
+                    <a href="#"><img src="img/0_64772_normal.webp" alt="" data-toggle="tooltip" data-placement="bottom"
+                                     title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="پادکست ابدیت و یک روز   فصل جشنواره‌ها ،  ... "><p>پادکست ابدیت و یک روز فصل جشنواره‌ها ،
+                        ... </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">ابدیت و یک روز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_80496_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست اپیزود ویژه -میتوس - اساطیر آفرینش در ... </p></a>
+                    <span>حسین رضوی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_46646_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست جهان در سال ۲۰۲۱ در این قسمت به صورت ... </p></a>
+                    <span>فرشاد محمودی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_80948_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست ابدیت و یک روز فصل جشنواره‌ها ، ... </p></a>
+                    <span>ابدیت و یک روز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_59168_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست ابدیت و یک روز فصل جشنواره‌ها ، ... </p></a>
+                    <span>ابدیت و یک روز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_50593_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست جیمز وب داستان قوی‌ترین تلسکوپ ... </p></a>
+                    <span>استرینگ کست</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_64772_normal.webp" alt="" data-toggle="tooltip" data-placement="bottom"
+                                     title="List"></a>
+                    <a href="#" data-toggle="tooltip" data-placement="right"
+                       title="پادکست ابدیت و یک روز   فصل جشنواره‌ها ،  ... "><p>پادکست ابدیت و یک روز فصل جشنواره‌ها ،
+                        ... </p></a>
+                    <span data-toggle="tooltip" data-placement="bottom" title="List">ابدیت و یک روز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_80496_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست اپیزود ویژه -میتوس - اساطیر آفرینش در ... </p></a>
+                    <span>حسین رضوی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_46646_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست جهان در سال ۲۰۲۱ در این قسمت به صورت ... </p></a>
+                    <span>فرشاد محمودی</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_80948_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست ابدیت و یک روز فصل جشنواره‌ها ، ... </p></a>
+                    <span>ابدیت و یک روز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_59168_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست ابدیت و یک روز فصل جشنواره‌ها ، ... </p></a>
+                    <span>ابدیت و یک روز</span>
+                </div>
+                <div>
+                    <a href="#"><img src="img/0_50593_normal.webp" alt=""></a>
+                    <a href="#"><p>پادکست جیمز وب داستان قوی‌ترین تلسکوپ ... </p></a>
+                    <span>استرینگ کست</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container-fluid footer-1">
+        <div class="container">
+            <div class="row">
+                <div class="top-footer d-flex">
+                    <div class="col-md-2">
+                        <p>فیدیبو</p>
+                        <ul>
+                            <li><a href="#">درباره ما</a></li>
+                            <li><a href="#">ورود ناشران</a></li>
+                            <li><a href="#">تماس با ما</a></li>
+                            <li><a href="#">همکاری با ما</a></li>
+                            <li><a href="#">وبلاگ</a></li>
+                            <li><a href="#">رصد</a></li>
+                            <li><a href="#">راهنما</a></li>
+                            <li><a href="#">RSS کتاب ها</a></li>
+                            <li><a href="#">شرایط استفاده</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p>کتاب‌های پیشنهادی</p>
+                        <ul>
+                            <li><a href="#">‌بهترین سال زندگی تو</a></li>
+                            <li><a href="#">کتاب تختت را مرتب کن</a></li>
+                            <li><a href="#">مردی به نام اوه</a></li>
+                            <li><a href="#">چهار اثر فلورانس اسکاول شین</a></li>
+                            <li><a href="#">اثر مرکب</a></li>
+                            <li><a href="#">ملت عشق</a></li>
+                            <li><a href="#">کتاب شدن</a></li>
+                            <li><a href="#">نیمه تاریک وجود‌</a></li>
+                            <li><a href="#">کتاب صبح جادویی</a></li>
+                            <li><a href="#">کتاب صوتی کیمیاگر</a></li>
+                            <li><a href="#">کتاب شب های روشن</a></li>
+                            <li><a href="#">صد سال تنهایی</a></li>
+                            <li><a href="#">بیشعوری</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2">
+                        <p>دسته‌بندی پیشنهادی</p>
+                        <ul>
+                            <li><a href="#">کتاب های دانشگاهی</a></li>
+                            <li><a href="#">کتاب های نوجوان</a></li>
+                            <li><a href="#">زندگی‌نامه، سفرنامه و خاطرات</a></li>
+                            <li><a href="#">کتاب های کودک</a></li>
+                            <li><a href="#">کتاب های آموزشی</a></li>
+                            <li><a href="#">کتاب های رایگان</a></li>
+                            <li><a href="#">کتاب های تاریخ</a></li>
+                            <li><a href="#">کتاب های سبک زندگی</a></li>
+                            <li><a href="#">کتاب تبلیغات و بازاریابی</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="application left-section">
+                            <span>اپلیکیشن فیدیبو</span>
+                            <div class="d-flex align-items-start justify-content-between">
+                                <a href="#"><i class="ti-apple"></i></a>
+                                <a href="#"><i class="ti-android"></i></a>
+                                <a href="#"><i class="ti-microsoft"></i></a>
+                                <button type="submit" class="btn">نصب اپلیکیشن فیدیبو</button>
+                            </div>
+                        </div>
+                        <div class="applying left-section">
+                            <span>درخواست کتاب</span>
+                            <p>کتاب مورد نظرتان را درخواست کنید تا در صورت امکان آن را به فروشگاه اضافه کنیم.</p>
+                            <div>
+                                <form>
+                                    <div class="form-group d-flex">
+                                        <input type="text" class="form-control" placeholder="نام کتاب">
+                                        <input type="text" class="form-control" placeholder="نام نویسنده">
+                                        <input type="text" class="form-control" placeholder="نام ناشر">
+                                        <button type="submit" class="btn">ارسال</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="support left-section">
+                            <span>پشتیبانی</span>
+                            <div class="d-flex justify-content-between weekly">
+                                <p>هفت روز هفته (ساعت ۹ الی ۱۸)</p>
+                                <a href="#">۰۲۱-۹۱۰۲۰۰۱۰</a>
+                            </div>
+                            <div class="d-flex justify-content-end icon-application">
+                                <a href="#" class="soundcloud-icon"><i class="ti-soundcloud"></i></a>
+                                <a href="#" class="facebook-icon"><i class="ti-facebook"></i></a>
+                                <a href="#" class="instagram-icon"><i class="ti-instagram"></i></a>
+                                <a href="#" class="twitter-icon"><i class="ti-twitter-alt"></i></a>
+                                <a href="#" class="pinterest-icon"><i class="ti-pinterest-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid  footer-2">
+        <div class="container">
+            <div class="row">
+                <div class="middle-footer d-flex">
+                    <div class="col-md-8">
+                        <p>
+                            فیدیبو بزرگترین سامانه خرید کتاب الکترونیک و صوتی در ایران است
+                            که می‌کوشد
+                            با گستره‌ای از کتاب‌ها و
+                            مجلات
+                            متنوع برای طیف وسیعی از کاربران تجربه فوق‌العاده خریدکتاب و خواندن آن در دستگاه‌های هوشمند
+                            را
+                            فراهم
+                            کند.در فیدیبو با خرید کتاب از بهترین ناشران ایرانی در موضوعات
+                            مختلف، کاربران می‌توانند در
+                            اپلیکیشن
+                            کتابخانه‌ای‌ شخصی برای خود بسازند و از امکانات منحصر به فرد آن استفاده کنند. برای تیم فیدیبو
+                            هدف
+                            خرید کتاب نیست بلکه ایجاد محیطی بری ارتباط بیشتر اهالی کتاب
+                            است.شایان ذکر است که فیدیبو بعد از
+                            خرید
+                            کتاب، با تیم پشتیبانی همیشه پاسخگوی کاربران محترم خواهد بود.
+                            با دانلود هزاران </p>
+                    </div>
+                    <div class="col-md-2 text-right">
+                        <img src="img/enamad%20(1).png" alt="">
+                    </div>
+                    <div class="col-md-2 text-left">
+                        <img src="img/enamad%20(1).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-3">
+        <div class="container">
+            <div class="row">
+                <div class="bottom-footer col-md-12">
+                    <p>© کلیه حقوق این وب‌سایت متعلق به فیدیبو می‌باشد.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- jQuery and Bootstrap -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/holder.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<!-- Custom JS -->
+<script src="js/script.js"></script>
+</body>
+</html>

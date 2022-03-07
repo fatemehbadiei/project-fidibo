@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Title</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="css/fontiran.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!--    <link rel="stylesheet" href="css/owl.theme.default.min.css">-->
+    <!-- Main css -->
+    <link href="css/style2.css" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9  d-flex align-items-center">
+                    <nav class="navbar navbar-light">
+                        <a class="navbar-brand mr-0">
+                            <img src="img/nd-header-logo.svg" alt="">
+                        </a>
+                    </nav>
+                    <form action="#" class="position-relative form-search">
+                        <div class="form-group mb-0 d-flex align-items-center div-search" id="input-form">
+                            <input type="search" class="input-group form-control mr-3 search-input"
+                                   placeholder="جستجو کتاب الکترونیکی و صوتی، پادکست، نویسنده …">
+                            <button type="submit" class="d-flex"><i class="ti-search ml-3"></i></button>
+                        </div>
+                        <div class="input-bottom d-none" id="input-bottom">
+                            <p>برای آغاز جستجو حداقل دو حرف تایپ کنید (:</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 d-flex justify-content-center pt-2 pb-2">
+                    <nav class="navbar p-0">
+                        <div class="collapse navbar-collapse d-block" id="navbarNav">
+                            <ul class="nav navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="ti-gift"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="ti-bag"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="ti-user"></i></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link login">ورود و ثبت نام</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-book">
+                    <div class="collapse navbar-collapse justify-content-between  nav-bottom"
+                         id="navbarSupportedContent">
+                        <ul class="navbar-nav p-0">
+                            <li class="nav-item" id="home">
+                                <i class="ti-home"></i>
+                                <a class="nav-link" href="#">خانه</a>
+                            </li>
+                            <li class="nav-item" id="audio-book">
+                                <i class="ti-book"></i>
+                                <a class="nav-link" href="#">کتاب الکترونیکی و صوتی</a>
+                                <div class="container div-menu-audio d-none" id="menu-audio-book">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul class="menu-audiobook">
+                                                <li>
+                                                    <a href="#">داستان و رمان</a>
+                                                    <ul>
+                                                        <li><a href="#">داستان کوتاه</a></li>
+                                                        <li><a href="#">داستان و رمان ایرانی</a></li>
+                                                        <li><a href="#">داستان و رمان پلیسی</a></li>
+                                                        <li><a href="#">داستان و رمان خارجی</a></li>
+                                                        <li><a href="#">داستان و رمان طنز</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">سبک زندگی</a>
+                                                    <ul>
+                                                        <li><a href="#">آشپزی</a></li>
+                                                        <li><a href="#">ایران‌شناسی</a></li>
+                                                        <li><a href="#">خانواده</a></li>
+                                                        <li><a href="#">سرگرمی</a></li>
+                                                        <li><a href="#">سلامت و رژیم درمانی</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">روانشناسی</a>
+                                                    <ul>
+                                                        <li><a href="#">انگیزشی و موفقیت</a></li>
+                                                        <li><a href="#">خودشناسی و خودسازی</a></li>
+                                                        <li><a href="#">روابط اجتماعی</a></li>
+                                                        <li><a href="#">روابط خانوادگی</a></li>
+                                                        <li><a href="#">روانشناسی کودکان</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">هنر</a>
+                                                    <ul>
+                                                        <li><a href="#">تاریخ هنر</a></li>
+                                                        <li><a href="#">سینما و تئاتر</a></li>
+                                                        <li><a href="#">معماری</a></li>
+                                                        <li><a href="#">موسیقی</a></li>
+                                                        <li><a href="#">نقاشی</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">مدیریت، بازاریابی و فروش</a>
+                                                    <ul>
+                                                        <li><a href="#">تبلیغات و بازاریابی</a></li>
+                                                        <li><a href="#">رهبری</a></li>
+                                                        <li><a href="#">کارآفرینی و کسب و کار</a></li>
+                                                        <li><a href="#">مالی و سرمایه گذاری</a></li>
+                                                        <li><a href="#">مدیریت استراتژیک</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">تاریخ</a>
+                                                    <ul>
+                                                        <li><a href="#"> تاریخ جهان</a></li>
+                                                        <li><a href="#">تاریخ کهن</a></li>
+                                                        <li><a href="#">تاریخ معاصر</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">علمی</a>
+                                                    <ul>
+                                                        <li><a href="#">تکنولوژی</a></li>
+                                                        <li><a href="#">دانش</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">علوم اجتماعی</a>
+                                                    <ul>
+                                                        <li><a href="#">ارتباطات و رسانه</a></li>
+                                                        <li><a href="#">علوم سیاسی</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">شعر</a>
+                                                    <ul>
+                                                        <li><a href="#">شعر ایران</a></li>
+                                                        <li><a href="#">شعر جهان</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">کتاب‌های رایگان</a>
+                                                    <ul>
+                                                        <li><a href="#">اینفوگرافیک</a></li>
+                                                        <li><a href="#">دیجی‌کالا مگ</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">آموزش</a>
+                                                    <ul>
+                                                        <li><a href="#">زبان آموزی</a></li>
+                                                        <li><a href="#">علوم کامپیوتر</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">دین و عرفان</a>
+                                                    <ul>
+                                                        <li><a href="#">عرفان</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">فلسفه</a>
+                                                    <ul>
+                                                        <li><a href="#">دانشنامه فلسفه استنفورد</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">کودک</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">نوجوان</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">اقتصاد</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">زنان و فمینیسم</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">English Books</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">حقوق</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">کمیک‌های رایگان</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item" id="paadcast">
+                                <i class="ti-microphone"></i>
+                                <a class="nav-link" href="#">پادکست</a>
+                                <div class="container div-menu-audio d-none" id="menu-paadcast">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul class="menu-audiobook">
+                                                <li>
+                                                    <a href="#">پادکست‌های محبوب</a>
+                                                    <ul>
+                                                        <li><a href="#">چنل بی</a></li>
+                                                        <li><a href="#">استرینگ کست</a></li>
+                                                        <li><a href="#">آلبوم</a></li>
+                                                        <li><a href="#">رادیو دیو</a></li>
+                                                        <li><a href="#">ناوکست</a></li>
+                                                        <li><a href="#">بی پلاس</a></li>
+                                                        <li><a href="#">فردوسی خوانی</a></li>
+                                                        <li><a href="#">هلو تاک</a></li>
+                                                        <li><a href="#">رادیو جولون</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های روایی</a>
+                                                    <ul>
+                                                        <li><a href="#">احسان عبدی‌پور</a></li>
+                                                        <li><a href="#">ساگا</a></li>
+                                                        <li><a href="#">رادیو مرز</a></li>
+                                                        <li><a href="#">راوکست</a></li>
+                                                        <li><a href="#">صداهای همراه</a></li>
+                                                        <li><a href="#">ژرفا</a></li>
+                                                        <li><a href="#">آن</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های روانشناسی و توسعه فردی</a>
+                                                    <ul>
+                                                        <li><a href="#">منیاز</a></li>
+                                                        <li><a href="#">دارما</a></li>
+                                                        <li><a href="#">زندگی نارنجی</a></li>
+                                                        <li><a href="#">هم آوا</a></li>
+                                                        <li><a href="#">رو به اوج</a></li>
+                                                        <li><a href="#">هلوتاک</a></li>
+                                                        <li><a href="#">ناجی</a></li>
+                                                        <li><a href="#">رواق</a></li>
+                                                        <li><a href="#">یونگ نگار</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">علم و تکنولوژی</a>
+                                                    <ul>
+                                                        <li><a href="#">ژرفا</a></li>
+                                                        <li><a href="#">فلسفه علم</a></li>
+                                                        <li><a href="#">دایجست</a></li>
+                                                        <li><a href="#">بلاک چین</a></li>
+                                                        <li><a href="#">استرینگ کست</a></li>
+                                                        <li><a href="#">تک چی</a></li>
+                                                        <li><a href="#">رادیو بادیو</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های مدیریت و کسب‌وکار</a>
+                                                    <ul>
+                                                        <li><a href="#">ده صبح</a></li>
+                                                        <li><a href="#">مسیر آفرین</a></li>
+                                                        <li><a href="#">دیجیتال مارکتینگ</a></li>
+                                                        <li><a href="#">رادیو ویدار</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های سینمایی</a>
+                                                    <ul>
+                                                        <li><a href="#">ابدیت و یک روز</a></li>
+                                                        <li><a href="#">پادکست پاپریکا</a></li>
+                                                        <li><a href="#">پادکست سینما گپ</a></li>
+                                                        <li><a href="#">نیمه شب</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های موسیقی</a>
+                                                    <ul>
+                                                        <li><a href="#">پادکست آلبوم</a></li>
+                                                        <li><a href="#">پادکست کُرُن</a></li>
+                                                        <li><a href="#">پادکست آمپاژ</a></li>
+                                                        <li><a href="#">آهنگساز</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های شعر و داستان</a>
+                                                    <ul>
+                                                        <li><a href="#">فردوسی خوانی</a></li>
+                                                        <li><a href="#">انسانک</a></li>
+                                                        <li><a href="#">تراولکست</a></li>
+                                                        <li><a href="#">رادیو صدای زمین</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">پادکست‌های تاریخی</a>
+                                                    <ul>
+                                                        <li><a href="#">پاراگراف</a></li>
+                                                        <li><a href="#">رادیو ته ‌دیگ</a></li>
+                                                        <li><a href="#">پادکست شیر کاکائو</a></li>
+                                                        <li><a href="#">رادیو دست‌‌نوشته‌ها</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="nav-item" id="magazine">
+                                <i class="ti-receipt"></i>
+                                <a class="nav-link" href="#">مجله</a>
+                                <div class="container div-menu-audio d-none" id="menu-magazine">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ul class="menu-audiobook">
+                                                <li>
+                                                    <a href="#">سبک زندگی</a>
+                                                    <ul>
+                                                        <li><a href="#">دانستنیها</a></li>
+                                                        <li><a href="#">موسسه فرهنگی هنری سانازسانيا</a></li>
+                                                        <li><a href="#">دانش یوگا</a></li>
+                                                        <li><a href="#">نجوم</a></li>
+                                                        <li><a href="#">آشپزی مثبت</a></li>
+                                                        <li><a href="#">نشریه بازی‌نما</a></li>
+                                                        <li><a href="#">نشریه موفقیت</a></li>
+                                                        <li><a href="#">پنجره خلاقیت</a></li>
+                                                        <li><a href="#">نشریه جنگ‌افزار</a></li>
+                                                        <li><a href="#">دانشمند</a></li>
+                                                        <li><a href="#">مجله راز</a></li>
+                                                        <li><a href="#">سرآشپز</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">فرهنگی هنری</a>
+                                                    <ul>
+                                                        <li><a href="#">آنگاه</a></li>
+                                                        <li><a href="#">سینما و ادبیات</a></li>
+                                                        <li><a href="#">نشریه مروارید</a></li>
+                                                        <li><a href="#">همشهری داستان</a></li>
+                                                        <li><a href="#">بخارا</a></li>
+                                                        <li><a href="#">سخن سیاووشان</a></li>
+                                                        <li><a href="#">ماهنامه وزن دنیا</a></li>
+                                                        <li><a href="#">هفته‌نامه کرگدن</a></li>
+                                                        <li><a href="#">ماهنامه حوالی</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">اجتماعی</a>
+                                                    <ul>
+                                                        <li><a href="#">ترجمان علوم انسانی</a></li>
+                                                        <li><a href="#">اندیشه پویا</a></li>
+                                                        <li><a href="#">عصر اندیشه</a></li>
+                                                        <li><a href="#">هفته‌نامه صدا</a></li>
+                                                        <li><a href="#">ماهنامه تجربه</a></li>
+                                                        <li><a href="#">چلچراغ</a></li>
+                                                        <li><a href="#">همشهری جوان</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">مدیریت و اقتصاد</a>
+                                                    <ul>
+                                                        <li><a href="#">فصلنامه بادکوبه</a></li>
+                                                        <li><a href="#">مجله کسب و کار هاروارد</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <a href="#">سینمایی</a>
+                                                    <ul>
+                                                        <li><a href="#">ماهنامه فیلم‌کاو</a></li>
+                                                        <li><a href="#">فصلنامه سینما انیمیشن</a></li>
+                                                        <li><a href="#">همشهری سینما</a></li>
+                                                        <li><a href="#">ماهنامه برش‌های کوتاه</a></li>
+                                                        <li><a href="#">اطلاعات هفتگی</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <button class="btn" type="submit">دانلود اپلیکیشن</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="head-alert text-center">
+    <nav>
+        <ul class="list-inline">
+            <li>
+                <a href="#">فیدیبو</a>
+                <span>/</span>
+            </li>
+            <li>
+                <a href="#">داستان و رمان</a>
+                <span>/</span>
+            </li>
+            <li>
+                <a href="#">داستان و رمان خارجی</a>
+                <span>/</span>
+            </li>
+            <li>
+                <a href="#">داستان و رمان ترکیه</a>
+                <span>/</span>
+            </li>
+            <li>
+        <span class="name-of-book">
+          <label>رمان عاشقانه ملت عشق، اثر الیف شافاک </label>
+        </span>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<main>
+    <div style="margin-top: 30px">
+        <article style="padding-bottom: 30px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="bov-img">
+                            <img src="img/4339_22364_normal.jpg" alt="" width="200" height="300">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-book">
+                            <h1>
+                                <a href="#">دانلود رمان عاشقانه ملت عشق | اثر الیف شافاک </a>
+                            </h1>
+                            <ul>
+                                <li>
+                                    <span>نویسنده : </span>
+                                    <a href="#">الیف شافاک</a>
+                                </li>
+                                <li>
+                                    <span>مترجم : </span>
+                                    <a href="#">ارسلان فصيحی</a>
+                                </li>
+                            </ul>
+                            <p>
+                                نسخه الکترونیک
+                                <span class="blue-title">
+                                    <strong>رمان عاشقانه ملت عشق، اثر الیف شافاک </strong>
+                                </span>
+                                به همراه هزاران کتاب دیگر از طریق اپلیکیشن رایگان فیدیبو در دسترس است. همین حالا دانلود کنید
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="electronic-book-type">
+                            <span class="price-book-type">۴۸,۰۰۰ تومان</span>
+                            <div class="buy-book-type">
+                                <a href="#" class="btn btn-lg">خرید نسخه الکترونیک</a>
+                            </div>
+                            <div class="study-book-type">
+                                <a href="#" class="btn btn-lg">
+                                    <i class="ti-book"></i>
+                                    <span>مطالعه نسخه نمونه</span>
+                                </a>
+                            </div>
+                            <div class="download-book-type">
+                                <a href="#" class="btn btn-lg">دانلود رایگان فیدیبو</a>
+                            </div>
+                            <div class="share-book-type">
+                                <a href="#" class="btn">
+                                    <i class="ti-share"></i>
+                                    <span> اشتراک گذاری</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="audio-book-type">
+                            <a href="#">
+                                <img src="img/audio-badge_v2.png" alt="">
+                            </a>
+                            <a href="#" class="download-audio-type">دانلود نسخه صوتی رمان ...</a>
+                            <a href="#">
+                                <i class="ti-angle-left"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 15px">
+                <div class="landing-intro">
+                    <p>معرفی کامل رمان عاشقانه ملت عشق، اثر الیف شافاک  را رایگان بشنوید</p>
+                    <div>
+                        <audio controls controlslist="nodownload" src="audio-files/4339.mp3"></audio>
+                    </div>
+                </div>
+            </div>
+            <div class="container" style="margin-top: 15px">
+                <div class="code-discount">
+                    <i class="ti-gift"></i>
+                        با کد تخفیف
+                        <strong>hifidibo</strong>
+                        این کتاب را در اولین خریدتان با «۶۰٪ تخفیف» بخرید!
+                </div>
+            </div>
+            <section class="section-title-book">
+                <div class="container">
+                    <h2>نقد و بررسی رمان عاشقانه ملت عشق، اثر الیف شافاک </h2>
+                    <section class="section-about-book">
+                        <div>
+                            <p>
+                                <br>
+                                چهل قاعده عشق که به نام ملت عشق نیز شناخته می‌شود، توسط نویسنده فرانسوی متولد ترکیه «الیف شافاک» نوشته شده است. این رمان که پرفروش‌ترین کتاب تاریخ ترکیه به حساب می‌آید، اثری برگرفته از ارتباط عرفانی بین شمس تبریزی و مولانا است که به صورت دو داستان موازی و در هم تنیده روایت می‌شود. بطن اصلی کتاب حول موضوع عشق و نقش آن در دنیای مدرن امروز نسبت به گذشته می‌نگرد و چنان آن را از غرب به شرق گسترش می‌دهد که به زندگی رنگ و بویی عرفانی و زاییده شده از عشق می‌دهد. اینکه چگونه قطعه سنگی کوچک، برکه‌ای راکد و خاموش را به تلاطم و جنبش وا می‌دارد.
+                            </p>
+                            <h2>درباره کتاب ملت عشق</h2>
+                            <p>
+                                رمان ملت عشق در سال 2010 به دو زبان ترکی و انگلیسی منتشر شد و به محبوب‌ترین رمان تاریخ ترکیه و به یکی از پرخواننده‌ترین کتاب‌های جهان تبدیل شد. اثر شافاک شامل دو روایت موازی است، روایت معاصر در مورد زن خانه‌دارِ متاهل و ناخشنود به نام اِللا روبینشتاین است که در ماساچوست آمریکا زندگی می‌کند. اِللا برای آژانس ادبی کار می‌کند و در حال حاضر او بر روی کتابی به نام «کُفر شیرین» که توسط عزیز زاهارا نوشته شده است، کار می‌کند. داستان عزیر، روایت دوم این رمان است.
+                            </p>
+                            <br>
+                            <p>
+                                کُفر شیرین در واقع داستان شمس تبریزی عارف صوفی است که او چشم‌انداز مرگش را می‌بیند و می داند که باید کسی را پیدا کند تا بتواند دانش و عرفان خود را به او انتقال دهد. به موجب همین او از سمرقند به قونیه سفر می‌کند، جایی که بزرگ مرد صوفی زمان یعنی جلال الدین رومی در آن زندگی می‌کند.
+                            </p>
+                            <p>
+                                او داستان خود را در مورد چگونگی تبدیل شدنشان به دو دوست روایت می‌کند و اینکه چگونه رومی شروع به تغییر می‌کند و چگونه مردم از شمس و خانواده مولوی نفرت پیدا می‌کنند. از سوی دیگر، اللا بعد آنکه به شدت تحت تاثیر کتاب کفر شیرین قرار می‌گیرد، با فرستادن ایمیل موجبات آشنایی خود با عزیز را پی ریزی می‌کند. در طی همین نامه‌های الکترونیکی، اللا می داند که آماده است تا از فرزندان، شوهر و هر چیز دیگری در زندگی‌اش به خاطر او بگذرد.
+                            </p>
+                            <p>
+                                نويسنده از منظرهای گوناگون گاهی از دیدگاه شمس، گاهی گدا، گاهی رومی یا زن روسپی یا حتی خانواده رومی، داستان عزیز را روایت می‌کند. این واقعا تصویری از آنچه در واقع اتفاق می‌افتد را به خوبی نشان می‌دهد، عشق رومی برای شمس و نفرت دیگران به او.
+                            </p>
+                            <h2>
+                                بخشی از کتاب ملت عشق
+                            </h2>
+                            <p>
+                                تمام زندگی اللای بیچاره خلاصه شده بود در راحتی شوهر و بچه‌هایش. نه علمش را داشت و نه تجربه‌اش را تا به تنهایی سرنوشتش را تغییر دهد. هیچ‌گاه نمی توانست خطر کند. همیشه محتاط بود، حتی برای عوض کردن مارک قهوه‌ای که می‌خورد بایست مدت‌های طولانی فکر می‌کرد. از بس خجالتی و سر بزیر و ترسو بود؛ شاید بشود گفت آخر بی‌عرضگی بود. درست به همین دلایل آشکار بود که هیچ کس، حتی خودش هم نفهمید که چطور اللا روبینشتاین بعد بیست سال آزگار زندگی زناشویی یک روز صبح از دادگاه، تقاضای طلاق کرد و خودش را از شر تاهل آزاد کرد و تک و تنها به سفری رفت با پایانی نامعلوم؛ اما حتما دلیلی داشت: عشق.
+                            </p>
+                            <p>
+                                اللا به شکلی غیر‌منتظره عاشق شد، عاشق مردی که اصلا فکرش را هم نمی‌کرد و به هیچ وجه انتظارش را نداشت. آن دو نه در یک شهر زندگی می‌کردند و نه حتی در یک قاره. حتی اگر هزاران کیلومتر فاصله میانشان را در نظر نگیریم، شخصیت هایشان هم خیلی با هم فرق می‌کرد، انگار یکی شب بود، دیگری روز. طرز زندگیشان هم زمین تا آسمان فرق داشت. بینشان پرتگاهی عمیق بود. این که دو نفر که در وضعیت عادی به سختی می‌توانستند یکدیگر را تحمل کنند، این طور در آتش عشق بسوزند، پدیده‌ای غیرمنتظره بود؛ اما پیش آمد و چنان سریع پیش آمد که اللا حتی نفهمید چه بر سرش آمد تا بتواند از خودش محافظت کند! عشق یک‌باره از غیب مثل تکه سنگی در برکه راکد زندگی اللا افتاد و او را لرزاند، تکان داد و زندگی‌اش را زیر و زبر کرد.
+                            </p>
+                            <p>
+                                برای مطالعه کامل کتاب، نسخه الکترونیکی (PDF) آن را از سایت فیدیبو دانلود نمایید، همچنین اگر از گوش فرا دادن به داستان بیشتر از خواندن لذت می برید، می توانید به صورت آنلاین کتاب صوتی ملت عشق را خریداری کنید.
+                            </p>
+                            <h2>
+                                رمانی درباره زندگی مولانا و شمس تبریزی
+                            </h2>
+                            <p>
+                                هر کسی که رمان ملت عشق را خوانده باشد، بی‌شک از آن تاثیر می‌گیرد، دلیلش بیشتر به خاطر شمس تبریزی است. از قواعد عشق او تا شخصیت قوی اش و اعتقادش به خدا، همه چیز در مسیری شگفت‌آور در چرخش است.
+                            </p>
+                            <p>
+                                چهل قاعده عشق که از زمان‌های مختلف توسط شمس نقل شده است، می تواند دیدگاه مخاطب را به زندگی و روابط آشکار او با فلسفه زیستن و انسانیت تغییر ‌دهد، این همان چیزی است که شمس در مولانا ایجاد کرد. تاثیر چنین عرفانی در اشعار رومی به وضوح دیده می‌شود و در پشت پرده همه این آثار او، عرفان شمس خودنمایی می‌کند.
+                            </p>
+                            <p>
+                                اگر شمس هر جنبه‌ای از نظم اجتماعی را به چالش نمی‌کشید، رابطه‌ای بین او و مولانا شکل نمی‌گرفت. اگر رومی شمس را از دست نمی‌داد، شاعر نمی‌شد و ما هم اشعار او را نمی‌داشتیم. به مفهوم کلی‌تر، این کتاب جشن تحول بنیادین رومی از دانشمند به شاعر است و به موازات آن تغییر درونی اللا و کشف عشق راستین در او.
+                            </p>
+                            <h2>
+                                چهل قاعده شمس تبریزی چیست؟
+                            </h2>
+                            <p>
+                                کلام شمس در چهل قاعده عشق بسیار گزین‎گو و نافذ است و از اقرار و درشت‌گویی دوری می‌کند. سادگی کلامش در ظاهر، پیچیدگی‎های درونی بی‌نظیری دارد. به همین دلیل مخاطب را وادار به اندیشیدن می‌کند، اما فهم کلامش کار عقل نیست، راه دل می‌خواهد.
+                            </p>
+                            <p>
+                                «خداوند انعکاسی مستقیم آن چیزی است که ما خودمان را می‌بینیم؛ ما چیزها را همانطور که هستند نمی‌بینیم، ما آنها را همانطور که هستیم می‌بینیم. اگر خدا به طور عمده ترس و گناه را به ذهن می‌آورد، به این معنی است که ترس و گناه بیش از حد درون ما وجود دارد. اگر خدا را پر از عشق و محبت می‌بینیم، ما نیز چنین هستیم».
+                            </p>
+                            <p>
+                                چهل قاعده شمس تنها به جملات بالا ختم نمی شود، بلکه تک تک قواعد یا قانون‌های او درباره ماهیت عشق، خدا و زندگی است. کلامش را نمی‌توان خواند و کناری انداخت، بلکه تازه سفری برای شروع است. از منظر او مسیر حقیقت، کار قلب است نه عقل و لازم است قلب را راهنمای خود کنی. شما می توانید خدا را در هر جا یاد کنی، زیرا خداوند در مسجد، کنیسه یا کلیسا محصور نمی‌شود. اما اگر هنوز نیاز به مکان مشخصی داری، تنها یک مکان برای جستجوی او وجود دارد: در قلب عاشق واقعی.
+                            </p>
+                            <h2>ملت عشق چند فصل است؟</h2>
+                            <p>
+                                کتاب ملت عشق در
+                                <strong style="font-weight: 500"> پنج فصل </strong>
+                                تنظیم شده است:
+                            </p>
+                            <p>
+                                •  خاک: عمق و آرامش
+                            </p>
+                            <p>
+                                •  آب: تغییر و جریان یافتن
+                            </p>
+                            <p>
+                                •  باد: رفتن و یا کوچ کردن
+                            </p>
+                            <p>
+                                • آتش: گرما و نابودی
+                            </p>
+                            <p>
+                                •    خلأ: تاثیر نبود چیزها
+                            </p>
+                            <p>
+                                اثر الیف با نهایت تیزهوشی به پنج بخش بالا تقسیم شده است که هر فصل به زبان یک راوی بیان می‎شود. دلیل انتخاب 5 عنصر اصلی طبیعت از سوی او، می‌تواند از سویی به پرداخت دقیق درون شخصیت‌های و پیشبرد داستان مرتبط باشد و از سویی دیگر ارتباط معنوی آنها با پدیده‌های مرسوم جهان.
+                            </p>
+                            <p>
+                                همین مورد به نوسان داستان کمک کرده و باعث شده است خواننده با کشش بیشتری کتاب را بخواند. تمام فصل‌های کتاب به شکلی زنجیروار به یکدیگر متصل هستند، به مانند عناصر 5 گانه طبیعت. همین اتصال باعث یکپارچگی داستان و تفسیری متفاوت از وقایع کتاب می‌شود که بر یکدیگر اثر می گذارند.
+                            </p>
+                            <h2>سایر آثار الیف شافاک، نویسنده ترکیه ای</h2>
+                            <p>
+                                الیف شافاک، رمان نویس بریتانیایی – ترکیه‌ای است که به هر دو زبان ترکی و انگلیسی می‌نویسد، او تا کنون هفده کتاب منتشر کرده است، که یازده از آنها رمان می‌باشد، از جمله پرفروش‌ترین آنها: حرامزاده استانبول، ملت عشق (چهل قاعده عشق) و سه دختر حوا است. نوشته‌های او به پنجاه زبان مختلف ترجمه شده است. هم‌چنین در سال 2017 توسط Politico به عنوان یکی از دوازده نفری که جهان را به جایی بهتر تبدیل می‌کنند، انتخاب شد.
+                            </p>
+                            <p>
+                                از دیگر آثار او می توان به موارد زیر اشاره کرد:
+                            </p>
+                            <p>• آناتولی‌ای برای چشم‌های بد</p>
+                            <p>•  پنهان </p>
+                            <p>•  برزخ </p>
+                            <p>•  صوفی </p>
+                            <p>• آینه‌های شهر </p>
+                            <p>•  مَحرم </p>
+                            <p>• شپش پالاس </p>
+                            <p>•  تقدس نخستین دیوانگی‌ها </p>
+                            <p>•  پدر و حرام‌زاده </p>
+                            <p>•  شرافت</p>
+                            <p>•  من و استادم </p>
+                            <p>•  آینه‌های شهر </p>
+                            <p>• کتاب شیر سیاه</p>
+                            <p>• کتاب اسکندر( بعد از عشق)</p>
+                            <p>ملت عشق تا به حال چه جوایزی برده است؟</p>
+                            <p>
+                                تا به امروز بیش از 750.000 نسخه از رمان ملت عشق فروخته شده است، به همین دلیل باعث شده است به محبوب‌ترین رمان تاریخ ترکیه بدل شود. در فرانسه جایزه آلف (Prix ALEF) به او برای همین رمان اهدا شد. همچنین برای جایزه بین المللی IMPAC دوبلین نیز در سال 2012 نامزد شد.
+                            </p>
+                            <h2>کدام ترجمه ملت عشق بهتر است؟</h2>
+                            <p>
+                                از کتاب ملت عشق چندین ترجمه در بازار وجود دارد، اما بهترین همه آنها ترجمه ارسلان فصیحی از انتشارات ققنوس است. او توانسته به فصاحت و روانی کتاب را به زبان فارسی برگردانده و مخاطب را همراه کند.
+                            </p>
+                            <h2>کلام آخر</h2>
+                            <p>
+                                قوانین بی نظیری زندگی برای بقای ما ضروری هستند، اما آنچه که انسان‌ها را ویژه می‌سازد، توانایی ما در ارتباط با منبع عشق است. این ارتباط الهی در همه ما جریان دارد و به ما اجازه می‌دهد که با قوانین جهان کنار بیاییم. در هنگام تجربه و صحبت کردن از عشق، قوانینی وجود ندارد، عشق فراتر از توضیح است. رمان ملت عشق در ادبیات ترکیه شاهکاری است از توصیفی زیبا از یک عشق عارفانه اما باید اشاره کرد که از این قبیل داستان ها و
+                                <strong style="font-weight: 500">
+                                    <a href="#" style="color: #5d5d5d">شعر عاشقانه</a>
+                                </strong>
+                                در ادبیات ایران کم نداریم و نمونه های بی نظیری توانسته اند شهرت جهانی یابند.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </article>
+        <section class="book-tag-section">
+            <h2>مشخصات رمان عاشقانه ملت عشق، اثر الیف شافاک </h2>
+            <div class="container" style="max-width: 1170px">
+                <div class="book-tag-div">
+                    <ul style="padding: 0 ; list-style: none">
+                        <li style="border-right: none">
+                            <img src="img/publisher.png" width="32" height="32" alt="">
+                            <a href="#">گروه انتشاراتی ققنوس</a>
+                        </li>
+                        <li>
+                            <img src="img/printer.png" width="32" height="32" alt="">
+                            <span>قیمت نسخه چاپی ۹۵,۰۰۰ تومان</span>
+                        </li>
+                        <li>
+                            <img src="img/date.png" width="32" height="32" alt="">
+                            <span>۱۳۹۴/۰۱/۱۵</span>
+                        </li>
+                        <li>
+                            <img src="img/language.png" width="32" height="32" alt="">
+                            <span> فارسی</span>
+                        </li>
+                        <li>
+                            <img src="img/filesize.png" width="32" height="32" alt="">
+                            <span> 2.64 مگابایت</span>
+                        </li>
+                        <li>
+                            <img src="img/pages.png" width="32" height="32" alt="">
+                            <span> ۵۱۰ صفحه</span>
+                        </li>
+                        <li>
+                            <img src="img/isbn.png" width="32" height="32" alt="">
+                            <label>۹۷۸-۹۶۴-۳۱۱-۹۱۹-۵</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+
+<!-- jQuery and Bootstrap -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/holder.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<!-- Custom JS -->
+<script src="js/script2.js"></script>
+</body>
+</html>
